@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", "Helvetica Neue",sans-serif;
+    list-style: none;
+    
+}
+
+.skills{
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px ;
+
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+
+}
+.skill-bar{
+    height: 15px;
+    background: #282828;
+    border-radius: 4px;
+
+}
+.skill-per{
+    height: 15px;
+    background-color: #7128d1;
+    border-radius: 4px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    color: white;
+    background: #282828;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -30px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #282828;
+    top: -10px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border: 2px;
+}
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.container2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container2 .skill2{
+    position: relative;
+    margin-top: 40px;
+    bottom: 70px;
+}
+.container2 .skill2 .outer{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    padding: 10px;
+    /* border: 1px solid #7128d1; */
+    box-shadow: 6px 6px 10px -1px rgba(0 0 0 / .15),
+                -6px -6px 10px -1px rgba(255 255 255 / .7);
+}
+.container2 .skill2 .outer .inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    
+    box-shadow: inset 4px 4px 6px -1px rgba(0 0 0 / .2),
+                -4px -4px 6px -1px rgba(255 255 255 / .7),
+                -.5px -.5px 0px rgba(255 255 255 / 1),
+                .5px .5px 0px rgba(0 0 0  / .15),
+                0px 12px 10px -10px rgba(0 0 0 / .05);
+
+}
+circle{
+    
+    fill: none;
+    stroke-width: 18px;
+    stroke: #7128d1;
+    stroke-dasharray: 508;
+    stroke-dashoffset: 472;
+    transition: 2s ease;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.skill2name{
+    font-size: 20px;
+    position: relative;
+    left: 25px;
+    top: 20px;
+}

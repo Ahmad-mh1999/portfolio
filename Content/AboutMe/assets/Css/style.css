@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Crimson+Text&family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important; 
+    font-family: 'Crimson Text', sans-serif ;
+}
+.flexCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.flexRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.me::before{
+    position: absolute;
+    content: '';
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    left: 10%;
+    top: 40%;
+    background-image: linear-gradient(45deg,#7f00ff,pink);
+    animation: object1 20s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: 50%;
+        top: 43%;
+    }
+}
+.me::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 80%;
+    top: 8%;
+    background-image: linear-gradient(45deg,#7f00ff,pink);
+    animation: object2 3s linear infinite;
+}
+@keyframes object2{
+    50%{
+        left: 80%;
+        top: 10%;
+    }
+}
+.education{
+    font-family: 'Cinzel', sans-serif;
+}
+.card1 h4 ,.cap{
+    text-transform: capitalize;
+}
+.card1 h4 {
+    font-weight: bolder;
+}
+.card1{
+    width: 500px;
+    height: 300px;
+    background-image: linear-gradient(#7128d1,#f1eef5);
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 999;
+    box-shadow: 10px 10px 10px 10px rgba(0 0 0 / .5);
+}
+p{
+    font-size: 18px;
+}
+#info{
+    z-index: 999;
+}
+.Follow{
+    position: relative;
+    bottom: 7px;
+    
+}
+.Follow i{
+    font-size: larger;
+    color: #7128d1;
+}
+.multiText{
+    color: #7f00ff;
+    text-transform: capitalize;
+}
